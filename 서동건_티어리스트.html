@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            width: 120px;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .item img {
+            width: 100%;
+            display: block;
+        }
+
+        /* 아래쪽 어둡게 */
+        .item::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        }
+
+        /* 텍스트 */
+        .item-name {
+            position: absolute;
+            bottom: 6px;
+            left: 8px;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class= "item" draggable="true" ondragstart="drag(event)" onmouseover="showPreview(this)" id="item_yourname_1">
+        <img src="https://th.bing.com/th/id/OIP.-i2Ombpc0qHizJ1NGVEkAAHaHa?w=207&h=207&c=7&r=0&o=7&pid=1.7&rm=3" alt="항목 이름">
+        <div class="item-name">포테토칩</div>
+    </div>
+    
+    <div class="item" draggable="true" ondragstart="drag(event)" onmouseover="showPreview(this)" id="item_yourname_2">
+        <img src="https://image.homeplus.kr/td/f95208c5-bb57-4133-ba50-83a2c556a53f" alt="항목 이름">
+        <div class="item-name">꿀꽈배기</div>
+    </div>
+
+    <div class="item" draggable="true" ondragstart="drag(event)" onmouseover="showPreview(this)" id="item_yourname_2">
+        <img src="https://th.bing.com/th/id/OIP.fRzYHzzxVwQAz7uZmbY0LQHaHa?w=160&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="항목 이름">
+        <div class="item-name">오징어땅꽁</div>
+    </div>
+</body>
+</html>
