@@ -1,0 +1,40 @@
+            <!-- 팀원 아이템 시작 (주의: id 값은 팀원마다 고유하게 변경하세요) -->
+<style>
+            .item {
+    width: 80px;
+    height: 80px;
+    cursor: grab;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item .item-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    color: white;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 4px 0;
+}
+</style>
+            <div class="item" draggable="true" ondragstart="drag(event)" onmouseover="showPreview(this)" id="item_임성진_1">
+                <img src="https://img.danuri.io/catalog-image/465/549/006/7dbdd7bef8b4464c9ea4457c3a1d3239.jpg?_v=20260415092143&shrink=360:360" alt="항목 이름">
+                <div class="item-name">빼빼로</div>
+            </div>
+            
+            <div class="item" draggable="true" ondragstart="drag(event)" onmouseover="showPreview(this)" id="item_임성진_2">
+                <img src="https://img.danuri.io/catalog-image/050/540/003/3e1dd1a00d414c26a3bb7da14420ade9.jpg?_v=20260409153939" alt="항목 이름">
+                <div class="item-name">메로나</div>
+            </div>
+            <!-- 팀원 아이템 끝 -->
+            
