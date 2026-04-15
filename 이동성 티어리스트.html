@@ -1,0 +1,41 @@
+<!-- 팀원 아이템 시작 (주의: id 값은 팀원마다 고유하게 변경하세요) -->
+<style>
+    .item {
+        width: 80px;
+        height: 80px;
+        cursor: grab;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        position: relative;
+    }
+
+    .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .item .item-name {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        font-size: 0.7rem;
+        text-align: center;
+        padding: 4px 0;
+    }
+</style>
+<div class="item" draggable="true" ondragstart="drag(event)" onmouseover="showPreview(this)" id="item_dongsung_1">
+    <img src="https://i.namu.wiki/i/ys0MVaDzMYdlTugN1bfTrnMNAQ-mH1TxHmqReGw4SGt3QVKfwezEz6oNDh3bJDMZiKfb3FCa72MA3ZigSxXRXdbHEukv-_leKvpQQI3e7ZCHJCZwna6uLrIdpYJEYyk2mQLK0D2jzHBq_eswpeagGw.webp"
+        alt="수박바">
+    <div class="item-name">수박바</div>
+</div>
+
+<div class="item" draggable="true" ondragstart="drag(event)" onmouseover="showPreview(this)" id="item_dongsung_2">
+    <img src="https://i.namu.wiki/i/KUSEb2_aKuopO2HvDTonNfW2-EUNmAJcH0WU4pWMF4vr4lFwk2ZSFfBfpAVtm-394Io1j9eR1RlCCuwx9D8isxput-cq8aDxaQZUntz6ZocSNhfPIj4onnZkVCxE8Gxaugp842A6DT6j5tllLSKb6Q.webp"
+        alt="눈을 감자">
+    <div class="item-name">눈을 감자</div>
+</div>
+<!-- 팀원 아이템 끝 -->
